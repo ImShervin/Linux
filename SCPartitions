@@ -1,0 +1,25 @@
+Shervin Kalkhora
+
+
+Legacy
+  Debian/RHEL
+500MB /boot
+20GB /
+8GB swap
+(rest of space) /home
+
+
+UEFI
+  Debian
+1   
+500MB /boot
+20GB /
+8GB swap
+(rest of space) /home
+
+  RHEL
+500MB /boot
+20GB /
+8GB swap
+(rest of space) /home
+
