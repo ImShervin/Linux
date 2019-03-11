@@ -1,0 +1,9 @@
+(when drive is 2TB or under)
+fdisk /dev/sdx
+
+(when drive is over 2TB)
+parted -s -a optimal /dev/sdx mklabel gpt mkpart primary 2048s 100%
+
+mkfs.xxx /dev/sdx
+ls -la /dev/disk/by-uuid
+nano /etc/fstab
