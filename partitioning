@@ -1,3 +1,6 @@
+Shervin Kalkhoran
+
+
 (when drive is 2TB or under)
 fdisk /dev/sdx
 
