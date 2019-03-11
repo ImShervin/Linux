@@ -1,0 +1,14 @@
+Shervin Kalkhoran
+
+  Debian/Ubuntu
+apt-get update
+apt-get upgrade -y
+apt-get dist-upgrade 
+apt-get install -y ledmon build-essential
+(in one command)
+apt-get update && apt-get upgrade -y && apt-get dist-upgrade && apt-get install -y ledmon build-essential
+
+  CentOS/Fedora
+yum update -y
+  RHEL
+can not update
