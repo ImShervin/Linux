@@ -5,5 +5,6 @@ fdisk /dev/sdx
 parted -s -a optimal /dev/sdx mklabel gpt mkpart primary 2048s 100%
 
 mkfs.xxx /dev/sdx
-ls -la /dev/disk/by-uuid
+ls -la /dev/disk/by-uuid/
+echo UUID=xxxxxxxxx >>/etc/fstab
 nano /etc/fstab
