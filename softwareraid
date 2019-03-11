@@ -1,1 +1,16 @@
+Shervin Kalkhoran
 
+Install Mdadm
+parted -s -a optimal /dev/sdx mklabel gpt mkpart primary 2048s 100% set 1 raid on print	
+mdadm --create /dev/md0 --level=raidx --raid-devices=x /dev/sd[x-x]1
+mkfs.xxx /dev/md0
+ls -la /dev/disk/by-uuid/
+echo UUID=xxxxxxxxxxxxxx >> /etc/fstab
+nano /etc/fstab
+
+
+  How to check raid initialization
+cat proc/mdstat 
+cat /proc/mdstat watch -n 1 cat ( to see live progression of raid initialization) 
+
+mdadm --create /dev/md0 --level=raid(# of raid) --raid-devices=(# of drives in raid) /dev/sd[(drive letters of drives in raid)]1
