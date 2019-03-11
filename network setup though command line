@@ -1,0 +1,12 @@
+Shervin Kalkhoran 
+
+
+  RHEL/CentOS
+nmtui
+
+  Ubuntu 16 server
+nano /etc/network/interfaces
+
+  Ubuntu 18 server
+nano /etc/netplan/01-netcfg.yaml
+netplan apply (when finished editing file)
