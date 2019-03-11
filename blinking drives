@@ -1,0 +1,10 @@
+Shervin Kalkhoran
+
+  RHEL/CentOS/Fedora/ScientificLinux
+sgpio -d sdx -s locate
+
+  Debian/Ubuntu
+  Must install ledmod/any blinking package
+wget ftp://10.12.17.15/pub/scripts/blinkgen.sh
+ledctl locate=/dev/sdx
+ledctl off=/dev/sdx
