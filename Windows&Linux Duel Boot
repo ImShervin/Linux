@@ -8,7 +8,7 @@ Shervin Kalkhoran
 
 
 
-CentOS 7 wont see it do this
+If CentOS 7 wont see Windows in grub do this
 cd /etc/grub.d/
 nano 40_custom
 
