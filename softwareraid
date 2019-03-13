@@ -1,6 +1,6 @@
 Shervin Kalkhoran
 
-Install Mdadm
+  Install Mdadm
 parted -s -a optimal /dev/sdx mklabel gpt mkpart primary 2048s 100% set 1 raid on print	
 mdadm --create /dev/md0 --level=raid(x) --raid-devices=(x) /dev/sd[(x)-(x)]1
 mkfs.xxx /dev/md0
