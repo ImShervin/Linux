@@ -1,0 +1,11 @@
+Shervin Kalkhoran
+
+
+Download mr3108fw.rom file then put it in a folder in the USB
+Plug in the USB into the PXE and mount the USB to the folder in your directory.
+Delete the .img file of the RAID card
+go to the RAID card directory then remove the mr3108fw.rom file
+Go to the directory for the USB where the mr3108fw.rom file is 
+cp mr3108fw.rom to the RAID card folder
+Nano singlepackagage thing and name it then bash it
+Go into the /pxe directory then nano the pxelinu.cfg/raid thing change the file info. 
