@@ -2,17 +2,17 @@ Shervin Kalkhoran
 
 
   Updating OS
-1. scp ESXi670-201811001.zip root@10.12.17.:/vmfs/volumes/datastore1
-2. ssh root@10.12.17.
-3. cd /vmfs/volumes/datastore1
-4. esxcli software profile update -d /vmfs/volumes/datastore1/ESXi670-201811001.zip -p $(esxcli software sources profile list -d /vmfs/volumes/datastore1/ESXi670-201113001.zip | awk '{ print $1 }' | tail -n 1)
-5. rm ESXi670-201811001.zip
+scp ESXi670-201811001.zip root@10.12.17.:/vmfs/volumes/datastore1
+ssh root@10.12.17.
+cd /vmfs/volumes/datastore1
+esxcli software profile update -d /vmfs/volumes/datastore1/ESXi670-201811001.zip -p $(esxcli software sources profile list -d /vmfs/volumes/datastore1/ESXi670-201113001.zip | awk '{ print $1 }' | tail -n 1)
+rm ESXi670-201811001.zip
 
-  Installing LSI
-1. scp lsi-mr3-7.705.09.00-1OEM.670.0.0.8169922.x86_64.vib root@10.12.17.:/vmfs/volumes/datastore1/
-2. ssh root@10.12.17.
-3. esxcli software vib install -v /vmfs/volumes/datastore1/lsi-mr3-7.705.09.00-1OEM.670.0.0.8169922.x86_64.vib
-4. rm /vmfs/volumes/datastore1/lsi-mr3-7.705.09.00-1OEM.670.0.0.8169922.x86_64.vib
+  Installing LSI drivers
+scp lsi-mr3-7.705.09.00-1OEM.670.0.0.8169922.x86_64.vib root@10.12.17.:/vmfs/volumes/datastore1/
+ssh root@10.12.17.
+esxcli software vib install -v /vmfs/volumes/datastore1/lsi-mr3-7.705.09.00-1OEM.670.0.0.8169922.x86_64.vib
+rm /vmfs/volumes/datastore1/lsi-mr3-7.705.09.00-1OEM.670.0.0.8169922.x86_64.vib
 
 
 file location for the OS update file
