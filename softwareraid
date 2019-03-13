@@ -11,6 +11,6 @@ nano /etc/fstab
 
   How to check raid initialization
 cat proc/mdstat 
-cat /proc/mdstat watch -n 1 cat ( to see live progression of raid initialization) 
+watch cat /proc/mdstat -n 1  ( to see live progression of raid initialization) 
 
 mdadm --create /dev/md0 --level=raid(# of raid) --raid-devices=(# of drives in raid) /dev/sd[(drive letters of drives in raid)]1
