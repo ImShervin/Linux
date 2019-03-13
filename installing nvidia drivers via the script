@@ -2,14 +2,12 @@ Shervin Kalkhoran
 
 
 1. Fully update the system
-2. *1 Look at the end of this partboot up with with "rdblacklist nouveau nomodeset 3" in the grub
-
-
-
-
-
-
-
+2. *1 Add this "rdblacklist nouveau nomodeset 3" in the grub
+3. cd /tmp
+4. wget ftp://10.12.17.15/pub/scripts/nvidia(xxxx).sh
+5. bash nvidia(xxxx).sh
+(If the system is Debian/Ubuntu then remove the changes in the grub)
+6. reboot and run nvidia-smi to make sure everything works fine
 
 *1
 
@@ -31,4 +29,11 @@ GRUB_TIMEOUT=0
 GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
 GRUB_CMDLINE_LINUX_DEFAULT="quiet rdblacklist nouveau nomodeset 3 splash"
 GRUB_CMDLINE_LINUX=""
+
+  RHEL/CentOS
+Install with nomodeset/basic grapics
+On RHEL you need to change the grub during the boot then after you reboot all the changes will be removed
+click on the up and down arrows and when you catch the grub click "e" on the first line then find nomodeset and make it look like this
+"rdblacklist nouveau nomodeset 3"
+click "F10" to save and exit
 
