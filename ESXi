@@ -13,3 +13,10 @@ Shervin Kalkhoran
 2. ssh root@10.12.17.
 3. esxcli software vib install -v /vmfs/volumes/datastore1/lsi-mr3-7.705.09.00-1OEM.670.0.0.8169922.x86_64.vib
 4. rm /vmfs/volumes/datastore1/lsi-mr3-7.705.09.00-1OEM.670.0.0.8169922.x86_64.vib
+
+
+file location for the OS update file
+ftp://10.12.17.15/pub/iso/esxi/6/
+
+file location for the LSI driver 
+ftp://10.12.17.15/pub/software/raid/esxi/
