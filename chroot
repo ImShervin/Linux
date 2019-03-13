@@ -1,0 +1,14 @@
+Shervin Kalkhoran
+
+
+mkdir -p /mnt/ubu/boot
+
+mount /dev/sdx(2) /mnt/ubu/
+mount /dev/sdx(1) /mnt/ubu/boot
+mount /dev/sdx(4) /mnt/ubu/home
+
+mount --bind /dev /mnt/ubu/dev
+mount --bind /proc /mnt/ubu/proc
+mount --bind /sys /mnt/ubu/sys
+
+chroot /mnt/ubu
