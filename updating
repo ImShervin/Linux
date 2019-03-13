@@ -12,3 +12,8 @@ apt-get update && apt-get upgrade -y && apt-get dist-upgrade && apt-get install 
 yum update -y
   RHEL
 can not update
+
+RHEL
+yum groups install -y Compatibility\ Libraries (If not installed during the install) 
+yum groups install -y Development\ Tools (If not installed during the install) 
+
