@@ -1,5 +1,9 @@
+Shervin Kalkhoran
+
+
+  setting fru
 ./SMCIPMITool 10.12.17. ADMIN ADMIN ipmi fruw PAT 107
-
+  Setting SumKey
 ./SMCIPMITool 10.12.17. ADMIN ADMIN bios setKey
-
+  Updating IPMI
 ./SMCIPMITool 10.12.17. ADMIN ADMIN ipmi flasha /location/of/firmware/REDFISH_X10_372.bin
