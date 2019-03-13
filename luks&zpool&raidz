@@ -1,0 +1,13 @@
+Follow first part to install ZFS
+https://linuxhint.com/install-zfs-centos7/
+Part the drives
+Create the keyfile with the passphrase
+echo -n 'ROCKPS76’ > /root/zfs.key
+chown root:root /root/zfs.key; chmod 400 /root/zfs.key
+Format the drive partition with the keyfile location 
+Cryptsetup -q luksFormat --type luks2 /dev/sd(x) /root/zfs.key
+Mapping
+cryptsetup open /dev/sd(x) encrypted(x)
+Creating RAIDZ in a zpool with ZFS
+zpool create data raidz2 /dev/mapper/encrypted(x)
+
