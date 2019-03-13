@@ -11,6 +11,6 @@ Shervin Kalkhoran
 8. nano packagesingle.sh 
 9. Edit the name to the RAID card then save 
 10. bash packagesingle.sh 
-11. G to /var/ftp/pub/pxe 
+11. Go to /var/ftp/pub/pxe 
 12. nano pxelinux.cfg/raid.cfg
 13. Find the RAID card and change the info
