@@ -1,0 +1,25 @@
+Shervin Kalkhoran
+
+
+1. First install windows to drive then install all drives and applications and run all updates
+2. When OS is fully updated go to "Disk Managment" and shink data partition in half
+3. Install Linux onto the drive via the available partition then update/finish the system
+4. When you reboot Windows should show in the GRUB
+
+
+
+CentOS 7 wont see it do this
+cd /etc/grub.d/
+nano 40_custom
+
+  put this in at the end
+menuentry "Windows 10" {
+         set root=(hd0,1)
+         chainloader +1
+         }
+  
+  run this and then you are done
+grub2-mkconfig --output=/boot/grub2/grub.cfg
+
+website with instructions
+https://dareneiri.github.io/Configuring-Grub-2-on-CentOS-7/
