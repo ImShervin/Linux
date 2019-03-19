@@ -1,0 +1,6 @@
+i=insert mode
+esc=exit insert mode
+:w= save but not exit
+:wq= save and quit
+:q!= leave and discard any changes
+
