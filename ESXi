@@ -5,7 +5,7 @@ Shervin Kalkhoran
 scp ESXi670-201811001.zip root@10.12.17.:/vmfs/volumes/datastore1
 ssh root@10.12.17.
 cd /vmfs/volumes/datastore1
-esxcli software profile update -d /vmfs/volumes/datastore1/ESXi670-201811001.zip -p $(esxcli software sources profile list -d /vmfs/volumes/datastore1/ESXi670-208113001.zip | awk '{ print $1 }' | tail -n 1)
+esxcli software profile update -d /vmfs/volumes/datastore1/ESXi670-201811001.zip -p $(esxcli software sources profile list -d /vmfs/volumes/datastore1/ESXi670-201811001.zip | awk '{ print $1 }' | tail -n 1)
 rm ESXi670-201811001.zip
 
   Installing LSI drivers
