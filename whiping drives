@@ -1,0 +1,8 @@
+Shervin Kalkhoran
+
+
+Filling the disk with all zeros (This may take a while, as it is making every bit of data 0)
+dd if=/dev/zero of=/dev/sdX bs=1M *replace X with the target drive letter.
+
+If you are wiping your hard drive for security, you should populate it with random data rather than zeros (This is going to take even longer than the first example.) :
+dd if=/dev/urandom of=/dev/sdX bs=1M *replace X with the target drive letter.
