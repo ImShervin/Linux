@@ -1,0 +1,5 @@
+Shervin Kalkhoran
+
+
+When CentOS yum update -y does not work properly
+rpm -e polkit --nodeps
