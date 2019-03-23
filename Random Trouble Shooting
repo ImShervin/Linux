@@ -1,5 +1,5 @@
 Shervin Kalkhoran
 
 
-When CentOS yum update -y does not work properly
+When CentOS yum update -y does not work properly after installing using kickstart from ftp
 rpm -e polkit --nodeps
