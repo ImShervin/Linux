@@ -10,6 +10,12 @@ touch (dir)/file.txt
 
 
 
+cp copies files
+mv moves and renames files
+rm removes files
+rm -r removes directories
+
+
 ls options
 
 -a - lists all contents, including hidden files and directories
