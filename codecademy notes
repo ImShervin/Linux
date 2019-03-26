@@ -7,8 +7,10 @@ cd ../../../ (example of going back 3)
 making a file in another dir
 touch (dir)/file.txt 
 
+Redirection
 
-
+> takes the standard output of the command on the left, and redirects it to the file on the right.
+>> takes the standard output of the command on the left and appends (adds) it to the file on the right. 
 
 cp copies files
 mv moves and renames files
