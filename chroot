@@ -1,14 +1,14 @@
 Shervin Kalkhoran
 
 
-mkdir -p /mnt/ubu/boot
+mkdir -p /mnt/chr/boot
 
-mount /dev/sdx(2) /mnt/ubu/
-mount /dev/sdx(1) /mnt/ubu/boot
-mount /dev/sdx(4) /mnt/ubu/home
+mount /dev/sdx(2) /mnt/chr/
+mount /dev/sdx(1) /mnt/chr/boot
+mount /dev/sdx(4) /mnt/chr/home
 
-mount --bind /dev /mnt/ubu/dev
-mount --bind /proc /mnt/ubu/proc
-mount --bind /sys /mnt/ubu/sys
+mount --bind /dev /mnt/chr/dev
+mount --bind /proc /mnt/chr/proc
+mount --bind /sys /mnt/chr/sys
 
-chroot /mnt/ubu
+chroot /mnt/chr
