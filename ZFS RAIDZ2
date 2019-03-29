@@ -1,0 +1,16 @@
+Shervin Kalkhoran
+
+
+##You do not need to partion the drives, zfs will take care of it for you just run this command with the drives
+
+zpool create <name> raidz2 /dev/sdb /dev/sdc /dev/sdd
+
+##To remove the zpool use this command
+zpool destroy <name>
+
+##Use this command when removing the zfs info from the drives after you remove the zpool
+zpool labelclear /dev/sdx
+
+
+https://forums.freebsd.org/threads/old-zfs-pool-information-will-not-erase-tried-dd.29739/
+https://docs.oracle.com/cd/E19253-01/819-5461/gammr/index.html
