@@ -4,13 +4,17 @@ Shervin Kalkhoran
 1. Download the .rom file with the newst version
 2. Put file into USB then plug it into the PXE
 3. Mount the drive to my RAIDT directory
+  mount /dev/sdx /home/shervin/RAIDT
+  
+Change directorys to the RAID folder
+ cd /var/ftp/pub/raid
 4. Remove the .img file for the RAID card
 5. Go to the directory of the RAID card and remove the .rom file
 6. Go to the directory of the USB with the .rom file then copy the file to the directory of the RAID card
 7. Go to /var/ftp/pub/raid
 8. nano packagesingle.sh 
 9. Edit the name to the RAID card then save 
-10. bash packagesingle.sh 
+10. sudo bash packagesingle.sh 
 11. Go to /var/ftp/pub/pxe 
 12. nano pxelinux.cfg/raid.cfg
 13. Find the RAID card and change the info
