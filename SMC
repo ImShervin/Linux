@@ -8,6 +8,6 @@ Shervin Kalkhoran
   Updating IPMI
 ./SMCIPMITool 10.12.17. ADMIN ADMIN ipmi flasha /location/of/firmware/REDFISH_X10_372.bin
 
-
+SMCIPMITool 10.12.17. ADMIN ADMIM ipmi ver
 SMCIPMITool 10.12.17. ADMIN ADMIM bios ver
 SMCIPMITool 10.12.17. ADMIN ADMIM bios update
