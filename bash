@@ -14,6 +14,16 @@ Is null: -z
 Equal: ==
 Not equal: !=
 
+
+if []
+then 
+echo
+elif []
+echo 
+else
+fi
+
+
 Variables 
 
 #!/bin/bash
