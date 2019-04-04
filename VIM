@@ -3,4 +3,12 @@ esc=exit insert mode
 :w= save but not exit
 :wq= save and quit
 :q!= leave and discard any changes
+:set number= sets line numbers
 
+Escape menu to move around
+"w" to move to the front of the next word
+"b" move to front of words
+"0" start of line
+"$" end of line
+"G" last line
+"A" end of the final line
