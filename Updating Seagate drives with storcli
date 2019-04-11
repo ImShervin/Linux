@@ -1,0 +1,7 @@
+Shervin Kalkhoran (Tom Ly showed me all of this)
+
+
+1. Download storcli
+cd /opt/MegaRAID
+./storcli64 /c0 show (To see the drives)
+./storcli64 /c0/e(x)/s(x) download src=(location of file)  (e(x) is the drive model s(x) is the number) 
