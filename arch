@@ -1,0 +1,8 @@
+Shervin Kalkhoran   
+
+
+https://www.archlinux.org/download/                                 (Link for download page)
+https://www.ostechnix.com/install-arch-linux-latest-version/        (Link for how to page)
+
+
+pacman -Syu wget      (Command to download wget)
