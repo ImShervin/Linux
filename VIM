@@ -12,3 +12,6 @@ Escape menu to move around
 "$" end of line
 "G" last line
 "A" end of the final line
+
+:%s/foo/bar/g      (Find and replace)
+https://vim.fandom.com/wiki/Search_and_replace
