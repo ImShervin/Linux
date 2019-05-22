@@ -1,0 +1,7 @@
+
+
+
+
+
+sudo mkisofs -o /home/user/Desktop/work.iso -b boot/isolinux/isolinux.bin -c boot/isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table /home/user/Desktop/work/grml
+
