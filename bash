@@ -11,35 +11,16 @@ Greater than or equal: -ge
 Greater than: -gt
 Is null: -z
 
-Equal: ==
-Not equal: !=
 
 
-if []
-then 
-echo
-elif []
-echo 
-else
-fi
 
+Making a partitions available on both windows and ubuntu
+mkdir ntfs_mount
+mount /dev/sda1 ntfs_mount
+mount -t nfts /dev/sda1 ntfs_mount
+mount /dev/sda1 /ntfs_mount_test
 
-Variables 
-
-#!/bin/bash
-phrase="Hello to you!"
-echo $phrase
-
-Conditionals 
-
-#!/bin/bash
-first_greeting="Nice to meet you!"
-later_greeting="How are you?"
-greeting_occasion=1
-if [ $greeting_occasion -lt 1 ]
-then
-  echo $first_greeting
-else
-  echo $later_greeting
-fi
-
+Turned of hibernation in Windows so that Windows would completely release the drive to allow Ubuntu to mount it and write to it.
+Turned off fast boot in Windows because the Ubuntu drive mount errors noted to also turn off fast boot.
+I put a mount entry in /etc/fstab on Ubuntu to mount the 65TB shared storage to /ntfs_mount
+Installed storcli on Ubuntu so the drive array could be viewed from Ubuntu.
