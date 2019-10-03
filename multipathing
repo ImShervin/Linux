@@ -1,0 +1,44 @@
+The pools can be tricky. Here is a multpathd cheat sheet. PLEASE KEEP IN MIND IT IS VERY BASIC.  This will not apply to all cases but would get multipathing installed on a system.  Also, this is specific to red Hat derivatives.
+ 
+ 
+        Install and load multipathd
+ 
+yum install and load multipathd
+[root@localhost ~]# yum list installed |grep multip
+device-mapper-multipath.x86_64              0.4.9-127.el7              @base   
+device-mapper-multipath-libs.x86_64         0.4.9-127.el7              @base 
+ 
+   rpm -qa |grep device
+        You need   "device-mapper-multipath"   package
+     which mpathconf
+     mpathconf --enable --with_multipathd y
+     modprobe dm-multipath  <--------------- Load kernel modules
+     modprobe dm-round-robin
+     lsmod |grep multi
+     multipath -ll
+     mpathconf <----------- show me status of multipathd
+ 
+ 
+This assumes that it has been cabled correctly. If you don't see two path
+in the multipath command then its not cabled correctly.
+ 
+This also assumes we are using the default /etc/multipatd.conf files
+with freindly names
+ 
+Proper output:
+ 
+ 
+# multipath -ll
+ 
+.......snip
+mpathl (35000cca25848c758) dm-11 WDC     ,WUH721414AL5204
+size=13T features='0' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=1 status=active
+| `- 15:0:9:0  sdr  65:16  active ready running  <------ Path 1
+`-+- policy='service-time 0' prio=1 status=enabled
+  `- 16:0:9:0  sdad 65:208 active ready running  <------ Path 2
+.................................snip
+ 
+ 
+Reference:
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/dm_multipath/mpio_setup
