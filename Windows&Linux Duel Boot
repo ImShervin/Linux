@@ -23,3 +23,15 @@ grub2-mkconfig --output=/boot/grub2/grub.cfg
 
 website with instructions
 https://dareneiri.github.io/Configuring-Grub-2-on-CentOS-7/
+
+
+Making a partitions available on both windows and ubuntu
+mkdir ntfs_mount
+mount /dev/sda1 ntfs_mount
+mount -t nfts /dev/sda1 ntfs_mount
+mount /dev/sda1 /ntfs_mount_test
+
+Turned of hibernation in Windows so that Windows would completely release the drive to allow Ubuntu to mount it and write to it.
+Turned off fast boot in Windows because the Ubuntu drive mount errors noted to also turn off fast boot.
+I put a mount entry in /etc/fstab on Ubuntu to mount the 65TB shared storage to /ntfs_mount
+Installed storcli on Ubuntu so the drive array could be viewed from Ubuntu.
