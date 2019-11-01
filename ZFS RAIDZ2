@@ -3,7 +3,10 @@ Shervin Kalkhoran
 
 ##You do not need to partion the drives, zfs will take care of it for you just run this command with the drives
 
+
+
 zpool create <name> raidz2 /dev/sdb /dev/sdc /dev/sdd
+zpool add <pool_name> <raid_level> driven driven+1....
 
 ##To remove the zpool use this command
 zpool destroy <name>
