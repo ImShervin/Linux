@@ -18,8 +18,11 @@ zpool labelclear /dev/sdx
 https://forums.freebsd.org/threads/old-zfs-pool-information-will-not-erase-tried-dd.29739/
 https://docs.oracle.com/cd/E19253-01/819-5461/gammr/index.html
 
+Adding Slog
+zpool add storage log mirror /dev/sdx /dev/sdy
 
-
+Adding L2ARC
+zpool add <pool_name> cache <drive>
 
 
 
