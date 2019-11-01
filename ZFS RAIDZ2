@@ -24,23 +24,6 @@ https://docs.oracle.com/cd/E19253-01/819-5461/gammr/index.html
 
 
 
-
-
-
-
-
-zpool status
-
-
-
-
-     zpool create <pool_name> <raid_level> driven driven+1....
-       
-
-zpool add <pool_name> <raid_level> driven driven+1....
-
-  
-
 zpool add -f FileStore spare wwn-0x5000c500a729a973 wwn-0x5000c500a7163653 wwn-0x5000c500a71e246f wwn-0x5000c500a72a3b57
 
 
