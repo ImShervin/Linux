@@ -1,4 +1,0 @@
-read -a (-a) means multiple inputs
-
-$REPLY is the standard output when using "read" with no assigned variable
-
