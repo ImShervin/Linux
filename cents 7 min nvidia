@@ -1,0 +1,16 @@
+
+yum update -y
+yum groupinstall "Development Tools"
+yum install kernel-devel epel-release
+yum install dkm
+
+Disable nouveau: 1. /etc/default/grub 2. Add the nouveau.modeset=0 into line starting with GRUB_CMDLINE_LINUX.
+
+grub2-mkconfig -o /boot/grub2/grub.cfg (leg)
+grub2-mkconfig -o /boot/efi/EFI/centos/grub.cfg(uefi)
+
+reboot
+
+systemctl isolate multi-user.target
+bash NVIDIA-Linux-x86_64-*
+
