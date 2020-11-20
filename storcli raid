@@ -1,0 +1,10 @@
+storcli64 /C0 add vd type=raid10 drives=83:5,6,7,8 pdperarray=2
+
+storcli64 /C0 add vd type=raid50 drives=83:5,6,7,8,9,10 pdperarray=3
+
+storcli64 /C0 add vd type=raid60 drives=83:5,6,7,8,9,10,11,12 pdperarray=4
+
+storcli64 /c0/e252/s6 add hotsparedrive
+
+storcli64 /c0/v0 start init full
+storcli64 /c0/v0 show init 
