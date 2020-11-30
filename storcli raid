@@ -1,8 +1,8 @@
-storcli64 /c0 add vd type=raid1 size=10gb names=tmp1 drives=0:2-3
+storcli64 /c0 add vd type=raid1 drives=0:2-3
 
-storcli64 /c0 add vd type=raid5 size=10gb names=tmp1 drives=0:2-6
+storcli64 /c0 add vd type=raid5 drives=0:2-6
 
-storcli64 /c0 add vd type=raid6 size=10gb names=tmp1 drives=0:2-7
+storcli64 /c0 add vd type=raid6 drives=0:2-7
 
 storcli64 /C0 add vd type=raid10 drives=83:5,6,7,8 pdperarray=2
 
