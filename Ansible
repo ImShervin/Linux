@@ -1,0 +1,8 @@
+ansible ubuntu -m ping
+  ansible ubuntu -m shell -a "lsblk"
+  ansible-playbook sample.yml 
+  ansible-playbook sample.yml -b -K
+  history 
+  ansible ubuntu -m apt -a "name=vim state=present" -b -K
+  ansible ubuntu -m shell -a "uptime"
+  ansible ubuntu -m shell -a "lsblk"
